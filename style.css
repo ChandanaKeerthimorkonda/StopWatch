@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #f3eded;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/ss.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: linear-gradient(135deg, rgb(246, 158, 75), rgb(252, 181, 93)); /* Gradient effect */
+    color: rgb(235, 220, 12); /* White text color for contrast */
+    font-family: 'Helvetica Neue', sans-serif; /* Modern font */
+    font-weight: bold;
+    font-size: 3rem; /* Increased font size */
+    padding: 20px;
+    border-bottom: 5px solid #f3eded; /* Subtle bottom border for a neat look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect on text */
+    letter-spacing: 1.5px; /* Slightly spaced letters for readability */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hlo, .game-section {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 40px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#playerName {
+    padding: 8px;
+    width: 60%;
+}
+
+#startGame {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgb(252, 181, 93);
+    border: none;
+    cursor: pointer;
+}
+
+#startGame:hover {
+    background-color: rgb(159, 159, 248);
+    transform: scale(1.1);
+}
+
+.game-section {
+    display: none;
+}
+
+.dig {
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gh {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#st { background-color: chartreuse; }
+#sto { background-color: red; color: white; }
+#res { background-color: purple; color: white; }
+
+.gh:hover {
+    transform: scale(1.1);
+}
+
+/*  Mobile Responsiveness */
+@media (max-width: 600px) {
+    .hlo, .game-section {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .dig {
+        font-size: 2rem;
+    }
+
+    .gh {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

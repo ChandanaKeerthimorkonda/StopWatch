@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>Stop Watch</header>
+        <div class="hlo">
+            <div class="input-group">
+                <label for="playerName" style="display: inline-block; margin-right: 10px;">Name:</label>
+                <input type="text"  id="playerName" placeholder="Enter your name">
+            </div>
+            <button id="startGame">Start</button>
+            
+        </div>
+
+  
+    <div class="game-section"  style="display: none;">
+        
+        <div id="time">
+            <span class="dig" id="hr">00</span>
+            <span>Hr</span>
+            <span class="dig" id="min">00</span>
+            <span>Min</span>
+            <span class="dig" id="sec">00</span>
+            <span>Sec</span>
+            <span class="dig" id="count">00</span>            
+
+        </div>
+        <div class="buttons">
+            <button id="st" class="gh">start</button>
+            <button id="sto"class="gh">stop</button>
+            <button id="res"class="gh">reset</button>
+    
+        </div>
+        
+    </div>
+    
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
